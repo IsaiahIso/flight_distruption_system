@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <style>
+        /* Target only the contact form */
+        #contact-form {
+            display: block; /* Override default flexbox */
+            width: 100%; /* Make it responsive */
+            max-width: 500px; /* Set a max width for better layout */
+            margin: 0 auto; /* Center the form */
+            padding: 20px;
+            background: rgb(176, 152, 152);;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Adjust form elements */
+        #contact-form .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+    
+        #contact-form label {
+            display: block;
+            color: #003580;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+    
+        #contact-form input,
+        #contact-form select,
+        #contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+    
+        #contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+    
+        #contact-form .btn-primary {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: black;
+            background: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        #contact-form .btn-primary:hover {
+             background-color: #088178;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="landing-header">
+        <div id="landing-logo">
+            <img src="../images/logo.jpeg" alt="logo-img">
+            <a href="index.html">FlightDistSys</a>
+        </div>
+        <div id="landing-nav">
+            <div class="landing-nav-item"><a href="index.html">Home</a></div>
+            <div class="landing-nav-item"><a href="features.html">Features</a></div>
+            <div class="landing-nav-item"><a href="about.html">About</a></div>
+            <div class="landing-nav-item"><a href="#">Contact</a></div>
+            <div id="landing-btn"><a href="/flightDistruption/auth/login.php">Login</a></div>
+        </div>
+    </div>
+
+    <!-- Contact Content Section -->
+    <div id="contact-container">
+        <div id="contact-hero">
+            <h1>Contact Our Team</h1>
+            <h1>Contact Our Team</h1>
+            <p>We're here to help with any questions about our flight distribution system.</p>
+            
+        </div>
+
+        <div id="contact-content">
+            <div id="contact-info">
+                <div class="contact-card">
+                    <img src="../images/support-icon.png" alt="Support Icon">
+                    <h3>Passengers Support</h3>
+                    <p>Available help for passengers' matters.</p>
+                    <a href="mailto:lesorogol1@gmail.com">lesorogol1@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <img src="../images/comp-icon.png" alt="Compensation Icon">
+                    <h3>Compensation Inquiries</h3>
+                    <p>For compensation and refund.</p>
+                    <a href="mailto:lesorogol1@gmail.com">lesorogol1@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <img src="../images/office-ico.png" alt="Office Icon">
+                    <h3>Current Location</h3>
+                    <p>20 Thika, Thika Road</p>
+                    <p>Nairobi, Kenya</p>
+                </div>
+            </div>
+
+            <div id="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form" method="POST" action="contact.php">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="support">Passengers Support</option>
+                            <option value="sales">Compensation Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>&copy; 2025 Flight Distribution System. All rights reserved.</p>
+    </div>
+</body>
+</html>

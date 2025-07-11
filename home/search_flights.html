@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Flights</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+    <div id="search-flights-section">
+        <h2>Search Flights</h2>
+        <p>Enter departure and destination to find available flights.</p>
+        <form action="search_flights.php" method="GET">
+            <div class="search-box">
+                <input type="text" name="from" id="from" placeholder="From (Departure)" required>
+                <input type="text" name="to" id="to" placeholder="To (Destination)" required>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        
+        <!-- Flight Results -->
+        <div id="flight-results">
+            <?php
+                if (isset($_GET['from']) && isset($_GET['to'])) {
+                    include 'search_flights.php'; // Include the PHP logic to search flights
+                }
+            ?>
+        </div>
+    </div>
+
+</body>
+</html>

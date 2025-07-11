@@ -1,0 +1,9 @@
+ services:
+  - type: web
+    name: flight-disruption-system
+    env: docker
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: ""
+    startCommand: apache2-foreground

@@ -1,0 +1,7 @@
+departure_location,arrival_location,departure_time,airline,delay_status
+Nairobi,Mombasa,600,Kenya Airways,Delayed
+Mombasa,Kisumu,840,Kenya Airways,On Time
+Nairobi,Eldoret,720,Jambojet,Delayed
+Eldoret,Nairobi,960,Fly540,On Time
+Nairobi,London,840,Kenya Airways,On Time
+London,Nairobi,1020,British Airways,Delayed
